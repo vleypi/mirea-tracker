@@ -1,3 +1,4 @@
+import { FEATURE_FLAGS } from "@/shared/config";
 import { Button, Card } from "@/shared/ui";
 import type { IResolvedSubject } from "@/entities/subject";
 import { AttendanceCard } from "@/features/mark-attendance";
@@ -27,7 +28,7 @@ export const SubjectProgress = ({ subject, onStartEditing }: ISubjectProgressPro
 
   return (
     <>
-      <StudyPlan subject={subject} />
+      {FEATURE_FLAGS.studyPlan && <StudyPlan subject={subject} />}
       {subject.blocks.map((block) => (
         <BlockCard key={block.id} subjectId={subject.id} block={block} />
       ))}
