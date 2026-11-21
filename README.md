@@ -1,6 +1,6 @@
-<img src="docs/logo.png" alt="mirea tracker" width="200">
-
----
+<p align="center">
+  <img src="docs/banner.svg" alt="mirea tracker. Трекер контрольных за семестр" width="100%">
+</p>
 
 Трекер контрольных за семестр: предметы, КР и практики со сроками, баллы и посещения лекций.
 
